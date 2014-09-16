@@ -7,7 +7,7 @@ $cislo = 0;
 
 $soucet = 0;
 
-function delitelne3($cislo){
+function delitelne3($cislo){ //To je co toto?
 	if(is_int($cislo/3)){
 		$soucet = $soucet + $cislo;
 		$delitelne3 = TRUE;
@@ -20,7 +20,7 @@ function delitelne5($cislo){
 	}
 }
 
-for($cislo; $cislo < 1000; $cislo++){
+for($cislo; $cislo < 1000; $cislo++){ //To snad neni pravda. Co takhle ++$cislo?
 	delitelne3($cislo);
 	if($delitelne3 == FALSE){
 		delitelne5;
